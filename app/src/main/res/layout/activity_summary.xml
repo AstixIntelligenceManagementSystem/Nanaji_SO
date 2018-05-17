@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#015db4"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+       >
+
+        <ImageView
+            android:id="@+id/img_bckBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Store List"/>
+
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:paddingRight="10dp"
+            android:src="@drawable/logout30"
+            android:visibility="invisible"
+
+            android:textSize="15sp" />
+
+        <!-- app:titleTextAppearance using for custom title size -->
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/selectFsoSpinner"
+        android:background="@drawable/spinner_quotation"
+       android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:padding="3dp"
+        android:textSize="17sp"
+        android:textColor="#000"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_below="@+id/selectFsoSpinner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_ParentFso"
+            >
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
